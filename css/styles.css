@@ -14,6 +14,7 @@ html {
   --accent-color: #d4c17f;
   --font: 'Roboto', 'Open Sans';
 }
+/* background: #3596f5; */
 
 body {
   background-color: var(--main-color);
@@ -148,7 +149,12 @@ APARTMENTS
 ==========================================================
 */
 
+.apartments {
+  padding-bottom: 180px;
+}
+
 .title {
+  margin: 0;
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
@@ -159,6 +165,7 @@ APARTMENTS
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .flats-txt {
@@ -170,7 +177,68 @@ APARTMENTS
 
 /* 
 ==========================================================
-APARTMENTS
+HOUSE
+==========================================================
+*/
+
+.house .container {
+  display: flex;
+}
+
+.home-image path {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.home-image path:hover {
+  opacity: 1;
+}
+
+path.current-floor {
+  opacity: 1;
+}
+
+.main-info {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter {
+  font-size: 124px;
+  color: var(--accent-color);
+}
+
+.counter-button {
+  all: unset;
+  cursor: pointer;
+}
+
+.counter-arrow-down {
+  transform: rotateX(180deg);
+}
+
+.button-primary {
+  padding: 16px 36px;
+  width: 297px;
+  height: 51px;
+  color: var(--text-color);
+  background: var(--accent-color);
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* 
+==========================================================
+FORM
 ==========================================================
 */
 
@@ -254,6 +322,7 @@ MAP & VIDEO
   width: 1110px;
   height: 358px;
   margin-bottom: 180px;
+  margin-top: 40px;
 }
 
 .line-form {
@@ -261,6 +330,7 @@ MAP & VIDEO
   justify-content: space-between;
   align-items: center;
   margin-bottom: 180px;
+  margin-top: 40px;
 }
 
 .ftr {
