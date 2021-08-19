@@ -1,3 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --text-color: #fff;
+  --main-color: #242b33;
+  --accent-color: #d4c17f;
+  --font: 'Roboto', 'Open Sans';
+}
+
+body {
+  background-color: var(--main-color);
+}
+
 .link {
   display: block;
   text-decoration: none;
@@ -9,18 +30,21 @@
   list-style: none;
 }
 
-.header {
-  background-color: #242b33;
+.container {
+  max-width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* 
-  background: linear-gradient(
-      180deg,
-      #242b33 11.98%,
-      rgba(45, 52, 60, 0.38) 51.04%,
-      #242b33 92.19%
-    ),
-    url(../img/banner.jpg); */
+==========================================================
+HEADER
+==========================================================
+*/
+
+.header {
+  background-color: var(--main-color);
+}
 
 .header-nav {
   height: 80px;
@@ -36,14 +60,24 @@
   display: flex;
 }
 
-.header-menu__item {
-  color: #fff;
+.header-menu__item .link {
   padding: 20px;
+  color: var(--text-color);
 }
 
+/* 
+==========================================================
+BANNER
+==========================================================
+*/
+
 .banner {
-  height: 100vh;
+  height: 600px;
+  max-width: 1680px;
   background-image: url(../img/banner.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,19 +85,18 @@
 }
 
 .banner-title {
-  color: #d4c17f;
-  font-family: Playfair Display;
+  color: var(--accent-color);
+  font-family: var(--font);
   font-weight: bold;
   font-size: 48px;
   line-height: 64px;
   text-align: center;
-  margin-top: 100px;
   margin-bottom: 100px;
 }
 
 .banner-list {
   display: flex;
-  margin-top: 224px;
+  margin-top: 100px;
 }
 
 .banner-list__item {
@@ -77,8 +110,172 @@
 .banner-contacts {
   line-height: 21px;
   text-align: center;
-  font-family: Raleway;
-  color: #fff;
+  font-family: var(--font);
+  color: var(--text-color);
   font-style: normal;
   margin-left: 18px;
+}
+
+/* 
+==========================================================
+TESTIMONIALS
+==========================================================
+*/
+.testimonials {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.testimonials-list {
+  display: flex;
+
+  width: 794px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials-list__text {
+  color: var(--text-color);
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+
+/* 
+==========================================================
+APARTMENTS
+==========================================================
+*/
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: var(--accent-color);
+}
+
+.flats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flats-txt {
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--text-color);
+  font-family: var(--font);
+}
+
+/* 
+==========================================================
+APARTMENTS
+==========================================================
+*/
+
+.form-section {
+  background-image: url(../img/Rectangle.jpg);
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.form-container {
+  display: flex;
+}
+
+.form-section__text {
+  color: var(--text-color);
+  width: 535px;
+  margin-right: 35px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 540px;
+  height: 135px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.form-input {
+  all: unset;
+  width: 255px;
+  height: 50px;
+  background-color: #36383a;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.form-txt {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+.form-btn {
+  all: unset;
+  width: 255px;
+  height: 50px;
+  color: var(--text-color);
+  text-align: center;
+  background: var(--accent-color);
+  cursor: pointer;
+}
+
+/* 
+==========================================================
+MAP & VIDEO
+==========================================================
+*/
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+
+.img-v {
+  position: relative;
+}
+
+.play-btn {
+  all: unset;
+  position: absolute;
+}
+
+.map {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1110px;
+  height: 358px;
+  margin-bottom: 180px;
+}
+
+.line-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 180px;
+}
+
+.ftr {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-color: #2d343c;
+}
+
+.ftr .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.txt {
+  font-family: var(--font);
+  color: var(--text-color);
 }

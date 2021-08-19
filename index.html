@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
@@ -20,19 +26,19 @@
 
         <ul class="header-menu list">
           <li class="header-menu__item">
-            <p>О комплексе</p>
+            <a href="#" class="link">О комплексе</a>
           </li>
           <li class="header-menu__item">
-            <p>Район</p>
+            <a href="#" class="link">Район</a>
           </li>
           <li class="header-menu__item">
-            <p>Каталог квартир</p>
+            <a href="#" class="link">Каталог квартир</a>
           </li>
           <li class="header-menu__item">
-            <p>Ипотека</p>
+            <a href="#" class="link">Ипотека</a>
           </li>
           <li class="header-menu__item">
-            <p>Контакты</p>
+            <a href="#" class="link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -58,127 +64,171 @@
       </ul>
     </section>
 
-    <section>
-      <ul>
-        <li>
-          <img src="./img/icons/bench.png" alt="" />
-          <p>Рядом исторические парки и скверы</p>
-        </li>
-        <li>
-          <img src="./img/icons/building.png" alt="" />
-          <p>Полностью обустроенный</p>
-        </li>
-        <li>
-          <img src="./img/icons/fountain.png" alt="" />
-          <p>10 фонтанов на территории</p>
-        </li>
-        <li>
-          <img src="./img/icons/bicycle.png" alt="" />
-          <p>6 км велодорожек</p>
-        </li>
-      </ul>
+    <section class="testimonials">
+      <div class="container">
+        <ul class="testimonials-list list">
+          <li class="testimonials-list__item">
+            <img src="./img/icons/bench.png" alt="" />
+            <p class="testimonials-list__text">
+              Рядом исторические парки и скверы
+            </p>
+          </li>
+          <li class="testimonials-list__item">
+            <img src="./img/icons/building.png" alt="" />
+            <p class="testimonials-list__text">Полностью обустроенный</p>
+          </li>
+          <li class="testimonials-list__item">
+            <img src="./img/icons/fountain.png" alt="" />
+            <p class="testimonials-list__text">10 фонтанов на территории</p>
+          </li>
+          <li class="testimonials-list__item">
+            <img src="./img/icons/bicycle.png" alt="" />
+            <p class="testimonials-list__text">6 км велодорожек</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Наши квартиры</h2>
+    <section class="apartments">
+      <div class="container">
+        <h2 class="title">Наши квартиры</h2>
 
-      <ul>
-        <li>
-          <img src="./img/flat.jpg" alt="" />
-          <p>Лофт 2 этажа</p>
-        </li>
-        <li>
-          <img src="./img/flat1.png" alt="" />
-          <p>Лофт 3 этажа</p>
-        </li>
-        <li>
-          <img src="./img/flat.jpg" alt="" />
-          <p>Лофт 2 этажа</p>
-        </li>
-        <li>
-          <img src="./img/flat1.png" alt="" />
-          <p>Лофт 3 этажа</p>
-        </li>
-      </ul>
+        <ul class="list flats">
+          <li>
+            <img class="flats-img" src="./img/flat.jpg" alt="" />
+            <p class="flats-txt">Лофт 2 этажа</p>
+          </li>
+          <li>
+            <img src="./img/flat1.png" alt="" />
+            <p class="flats-txt">Лофт 3 этажа</p>
+          </li>
+          <li>
+            <img src="./img/flat.jpg" alt="" />
+            <p class="flats-txt">Лофт 2 этажа</p>
+          </li>
+          <li>
+            <img src="./img/flat1.png" alt="" />
+            <p class="flats-txt">Лофт 3 этажа</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Хотите посмотреть?</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi,
-        temporibus nulla quasi nostrum unde distinctio et ipsa? Repudiandae
-        blanditiis non minima. Magnam, odio? Mollitia officia ullam, nemo porro
-        voluptates sint dicta quisquam necessitatibus eos odio nulla aperiam
-        consectetur sit aliquid optio similique sapiente pariatur eum quidem
-        facere minus quae.
-      </p>
+    <section class="form-section">
+      <div class="container">
+        <h2 class="title">Хотите посмотреть?</h2>
+        <div class="form-container">
+          <p class="form-section__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi,
+            temporibus nulla quasi nostrum unde distinctio et ipsa? Repudiandae
+            blanditiis non minima. Magnam, odio? Mollitia officia ullam, nemo
+            porro voluptates sint dicta quisquam necessitatibus eos odio nulla
+            aperiam consectetur sit aliquid optio similique sapiente pariatur
+            eum quidem facere minus quae.
+          </p>
 
-      <div class="form">
-        <form action="">
-          <label for="">
-            <input type="text" placeholder="Ваше имя" />
-          </label>
-        </form>
+          <div class="form">
+            <form action="">
+              <label for="">
+                <input type="text" class="form-input" placeholder="Ваше имя" />
+              </label>
+            </form>
 
-        <form action="">
-          <label for="">
-            <input type="text" placeholder="Ваш телефон" required />
-          </label>
-        </form>
-        <p>
-          *Мы никому не передаем ваши данные. <br />
-          И не сохраняем ваш номер в базу.
-        </p>
-        <button type="submit">Посмотреть район</button>
+            <form action="">
+              <label for="">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Ваш телефон"
+                  required
+                />
+              </label>
+            </form>
+            <p class="form-txt">
+              *Мы никому не передаем ваши данные. <br />
+              И не сохраняем ваш номер в базу.
+            </p>
+            <button class="form-btn" type="submit">Посмотреть район</button>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
-      <div class="img-container">
-        <img src="./img/flat1.png" alt="" />
-        <img src="./img/icons/play-button.png" alt="" />
-      </div>
-      <h2>Район на карте</h2>
-      <img src="./img/map.jpeg" alt="" />
-      <h2>Есть вопросы?</h2>
-      <div class="form">
-        <form action="">
-          <label for="">
-            <input type="text" placeholder="Ваше имя" />
-          </label>
-        </form>
+      <div class="container">
+        <div class="img-container">
+          <img class="img-v" src="./img/flat1.png" alt="" />
+          <button class="play-btn">
+            <img src="./img/icons/play-button.png" alt="" />
+          </button>
+        </div>
+        <h2 class="title">Район на карте</h2>
+        <img class="map" src="./img/map.jpeg" alt="" width="600" />
+        <h2 class="title">Есть вопросы?</h2>
+        <div class="line-form">
+          <p class="form-txt">
+            *Мы никому не передаем ваши данные. <br />
+            И не сохраняем ваш номер в базу.
+          </p>
 
-        <form action="">
-          <label for="">
-            <input type="text" placeholder="Ваш телефон" required />
-          </label>
-        </form>
-        <p>
-          *Мы никому не передаем ваши данные. <br />
-          И не сохраняем ваш номер в базу.
-        </p>
-        <button type="submit">Посмотреть район</button>
+          <form action="">
+            <label for="">
+              <input class="form-input" type="text" placeholder="Ваше имя" />
+            </label>
+          </form>
+
+          <form action="">
+            <label for="">
+              <input
+                class="form-input"
+                type="text"
+                placeholder="Ваш телефон"
+                required
+              />
+            </label>
+          </form>
+
+          <button class="form-btn" type="submit">Посмотреть район</button>
+        </div>
       </div>
     </section>
 
-    <footer>
-      <img src="./img/icons/first-screen__logo.png" alt="" />
-      <ul>
-        <li>О комплексе</li>
-        <li>Район</li>
-        <li>Каталог квартир</li>
-        <li>Ипотека</li>
-        <li>Контакты</li>
-      </ul>
+    <footer class="ftr">
+      <div class="container">
+        <img src="./img/icons/first-screen__logo.png" alt="" />
+        <ul class="list">
+          <li>
+            <p class="txt">О комплексе</p>
+          </li>
+          <li>
+            <p class="txt">Район</p>
+          </li>
+          <li>
+            <p class="txt">Каталог квартир</p>
+          </li>
+          <li>
+            <p class="txt">Ипотека</p>
+          </li>
+          <li>
+            <p class="txt">Контакты</p>
+          </li>
+        </ul>
 
-      <ul>
-        <li>Адрес: Наб. реки Фонтанки 10-15</li>
-        <li>
-          <a href="tel:+380639480163">call us</a>
-        </li>
-        <li>Отдел продаж: 10:00 - 20:00</li>
-        <li>E-mail: vip@housevip.ua</li>
-      </ul>
+        <ul class="list">
+          <li>
+            <p class="txt">Адрес: Наб. реки Фонтанки 10-15</p>
+          </li>
+          <li>
+            <a class="txt link" href="tel:+380639480163">Tap here to call us</a>
+          </li>
+          <li>
+            <p class="txt">Отдел продаж: 10:00 - 20:00</p>
+          </li>
+          <li>
+            <a class="txt link" href="mailto:#">E-mail: vip@housevip.ua</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
